@@ -29,6 +29,7 @@ shinyUI(fluidPage(
             numericInput("PUT_coefficient", label = "PUT coefficient", value = 44.3085),
             numericInput("SPD_coefficient", label = "SPD coefficient", value = 27.4505),
             numericInput("SPM_coefficient", label = "SPM coefficient", value = 22.9089),
+            numericInput("warning_threshold",label = "SE Warning Threshold", value = 5),
             h3(), 
             print("--------------"),
             h3(),

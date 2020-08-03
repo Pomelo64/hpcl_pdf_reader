@@ -23,6 +23,8 @@ shinyServer(function(input, output) {
     
     observeEvent(input$unzip,{
         
+        file.remove(list.files(pattern = ".xlsx"))
+        
         utils::unzip(zipfile = input$zip_file$datapath)
         
         # table for information of the user
@@ -134,8 +136,30 @@ shinyServer(function(input, output) {
     })
    
     # file for download button 
-    downloadable_file <- reactive({
-        aggregate_table()
+downloadable_file <- eventReactive(input$compute,{
+    print("downloadable file preparation")
+        samples_iterations_computations_tbl <- aggregate_table()
+        
+        last_column_index <- ncol(samples_iterations_computations_tbl)
+        last_row_index <- nrow(samples_iterations_computations_tbl)
+        
+        
+        wb1 <- openxlsx::createWorkbook()
+        addWorksheet(wb = wb1, sheetName = "Sheet 1")
+        writeData(wb = wb1 , sheet = 1 , x =samples_iterations_computations_tbl )
+        style <- openxlsx::createStyle(bgFill = "tan1")
+
+        conditionalFormatting(wb1, sheet = 1,
+                              cols = (last_column_index-2):last_column_index,
+                              rows = 2:last_row_index,
+                              rule = str_c(">=",input$warning_threshold),
+                              style = style
+        )
+        print(str_glue("warning threshold: {n}", n = str_c(">=",input$warning_threshold)))
+        print("end of excel file preparation: done")
+        
+        return(wb1)
+        # openxlsx::saveWorkbook(wb1, file = "aggregation_iterations.xlsx", overwrite = T)
     })
     
     #download button
@@ -149,8 +173,10 @@ shinyServer(function(input, output) {
                 paste("aggregate_table", ".xlsx", sep = "")
             },
             content = function(file) {
-                openxlsx::write.xlsx(x = ,
-                                     file = file)
+                openxlsx::saveWorkbook(wb = downloadable_file(),
+                                       file =  file ,
+                                       overwrite = T)
+                
             }
         )
         

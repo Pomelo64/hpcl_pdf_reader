@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1412020905",
+    "hash" : "3277567554",
     "id" : "F9A732EE",
-    "lastKnownWriteTime" : 1595834985,
-    "last_content_update" : 1595834985108,
+    "lastKnownWriteTime" : 1596452480,
+    "last_content_update" : 1596452480521,
     "path" : "~/Downloads/plant_biology/plant_biology/HPLC_analysis_aggregator/ui.R",
     "project_path" : "HPLC_analysis_aggregator/ui.R",
     "properties" : {
-        "cursorPosition" : "42,39",
-        "scrollLine" : "27"
+        "cursorPosition" : "31,88",
+        "scrollLine" : "21"
     },
     "read_only" : false,
     "read_only_alternatives" : [
