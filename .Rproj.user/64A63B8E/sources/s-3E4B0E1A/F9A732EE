@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1595786278268.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1412020905",
+    "id" : "F9A732EE",
+    "lastKnownWriteTime" : 1595834985,
+    "last_content_update" : 1595834985108,
+    "path" : "~/Downloads/plant_biology/plant_biology/HPLC_analysis_aggregator/ui.R",
+    "project_path" : "HPLC_analysis_aggregator/ui.R",
+    "properties" : {
+        "cursorPosition" : "42,39",
+        "scrollLine" : "27"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

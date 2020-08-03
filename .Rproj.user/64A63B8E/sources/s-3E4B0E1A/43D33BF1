@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1595745393592.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3761470759",
+    "id" : "43D33BF1",
+    "lastKnownWriteTime" : 1595834997,
+    "last_content_update" : 1595834997366,
+    "path" : "~/Downloads/plant_biology/plant_biology/plant_biology_automation/ui.R",
+    "project_path" : "plant_biology_automation/ui.R",
+    "properties" : {
+        "cursorPosition" : "34,18",
+        "scrollLine" : "24"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

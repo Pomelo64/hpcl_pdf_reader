@@ -1,0 +1,12 @@
+name: HPLC_analysis_aggregator
+title: HPLC_analysis_aggregator
+username:
+account: ashkiani
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2614268
+bundleId: 3438832
+url: https://ashkiani.shinyapps.io/HPLC_analysis_aggregator/
+when: 1595806189.9297
+asMultiple: FALSE
+asStatic: FALSE
